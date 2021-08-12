@@ -1,0 +1,140 @@
+grass    .SetWidth (400.0f);
+	grass    .SetHeight(400.0f);
+	grass    .Init     (shader, red, "textures/floor/grass.png", 2, 2);
+	mainRoad .SetWidth (400.0f);
+	mainRoad .SetHeight(400.0f);
+	mainRoad .Init     (shader, red, "textures/floor/main.png", 1, 1);
+	leftWall .SetWidth (400.0f);
+	leftWall .SetHeight(400.0f);
+	leftWall .Init     (shader, red, "textures/walls/leftWall.png", 1, 1);
+	rightWall.SetWidth (400.0f);
+	rightWall.SetHeight(400.0f);
+	rightWall.Init     (shader, red, "textures/walls/rightWall.png", 1, 1);
+	topWall  .SetWidth (400.0f);
+	topWall  .SetHeight(400.0f);
+	topWall  .Init     (shader, red, "textures/walls/topWall.png", 1, 1);
+	botWall  .SetWidth (400.0f);
+	botWall  .SetHeight(400.0f);
+	botWall  .Init     (shader, red, "textures/walls/botWall.png", 1, 1);
+	botRightCorner.SetWidth  (400.0f);
+	botRightCorner.SetHeight (400.0f);
+	botRightCorner.Init      (shader, red, "textures/corner/botRightCorner.png", 1, 1);
+	botLeftCorner .SetWidth  (400.0f);
+	botLeftCorner .SetHeight (400.0f);
+	botLeftCorner .Init      (shader, red, "textures/corner/botLeftCorner.png", 1, 1);
+	topRightCorner.SetWidth  (400.0f);
+	topRightCorner.SetHeight (400.0f);
+	topRightCorner.Init      (shader, red, "textures/corner/topRightCorner.png", 1, 1);
+	topLeftCorner .SetWidth  (400.0f);
+	topLeftCorner .SetHeight (400.0f);
+	topLeftCorner .Init      (shader, red, "textures/corner/topLeftCorner.png", 1, 1);
+
+
+~@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@v@@@@@@@
+
+//grass.SetWidth(400.0f);
+	//grass.SetHeight(400.0f);
+	//grass.Init(shader, red, "textures/floor/grass.png", 1, 1);
+	//mainRoad.SetWidth(400.0f);
+	//mainRoad.SetHeight(400.0f);
+	//mainRoad.Init(shader, red, "textures/floor/main.png", 1, 1);
+	//leftWall.SetWidth(400.0f);
+	//leftWall.SetHeight(400.0f);
+	//leftWall.Init(shader, red, "textures/walls/leftWall.png", 1, 1);
+	//rightWall.SetWidth(400.0f);
+	//rightWall.SetHeight(400.0f);
+	//rightWall.Init(shader, red, "textures/walls/rightWall.png", 1, 1);
+	//topWall.SetWidth(400.0f);
+	//topWall.SetHeight(400.0f);
+	//topWall.Init(shader, red, "textures/walls/topWall.png", 1, 1);
+	//botWall.SetWidth(400.0f);
+	//botWall.SetHeight(400.0f);
+	//botWall.Init(shader, red, "textures/walls/botWall.png", 1, 1);
+	//botRightCorner.SetWidth(400.0f);
+	//botRightCorner.SetHeight(400.0f);
+	//botRightCorner.Init(shader, red, "textures/corner/botRightCorner.png", 1, 1);
+	//botLeftCorner.SetWidth(400.0f);
+	//botLeftCorner.SetHeight(400.0f);
+	//botLeftCorner.Init(shader, red, "textures/corner/botLeftCorner.png", 1, 1);
+	//topRightCorner.SetWidth(400.0f);
+	//topRightCorner.SetHeight(400.0f);
+	//topRightCorner.Init(shader, red, "textures/corner/topRightCorner.png", 1, 1);
+	//topLeftCorner.SetWidth(400.0f);
+	//topLeftCorner.SetHeight(400.0f);
+	//topLeftCorner.Init(shader, red, "textures/corner/topLeftCorner.png", 1, 1);
+	playerSprite.SetWidth(75.0f);
+	playerSprite.SetHeight(75.0f);
+	playerSprite.Init(shader, red, "textures/cars/BlueStrip.png",1,1);
+
+
+
+	//float posX = 0;
+	//float posY = 0;
+	//for (int row = 0; row < 20; row++)
+	//{
+	//	for (int column = 0; column < 25; column++)
+	//	{
+	//		type = mapArray[row][column];
+
+	//		posX = column * 400.0f;
+	//		posY = row * 400.0f;
+
+	//		switch (type)
+	//		{
+	//		case 1:
+	//			grass.SetXpos(posX);
+	//			grass.SetYpos(posY);
+	//			track.push_back(grass);
+	//			break;
+	//		case 2:
+	//			mainRoad.SetXpos(posX);
+	//			mainRoad.SetYpos(posY);
+	//			track.push_back(mainRoad);
+	//			break;
+	//		case 3:
+	//			botWall.SetXpos(posX);
+	//			botWall.SetYpos(posY);
+	//			track.push_back(botWall);
+	//			break;
+	//		case 4:
+	//			leftWall.SetXpos(posX);
+	//			leftWall.SetYpos(posY);
+	//			track.push_back(leftWall);
+	//			break;
+	//		case 5:
+	//			topWall.SetXpos(posX);
+	//			topWall.SetYpos(posY);
+	//			track.push_back(topWall);
+	//			break;
+	//		case 6:
+	//			rightWall.SetXpos(posX);
+	//			rightWall.SetYpos(posY);
+	//			track.push_back(rightWall);
+	//			break;
+	//		case 7:
+	//			botRightCorner.SetXpos(posX);
+	//			botRightCorner.SetYpos(posY);
+	//			track.push_back(botRightCorner);
+	//			break;
+	//		case 8:
+	//			botLeftCorner.SetXpos(posX);
+	//			botLeftCorner.SetYpos(posY);
+	//			track.push_back(botLeftCorner);
+	//			break;
+	//		case 9:
+	//			topRightCorner.SetXpos(posX);
+	//			topRightCorner.SetYpos(posY);
+	//			track.push_back(topRightCorner);
+	//			break;
+	//		case 10:
+	//			topLeftCorner.SetXpos(posX);
+	//			topLeftCorner.SetYpos(posY);
+	//			track.push_back(topLeftCorner);
+	//			break;
+	//		default:
+	//			break;
+	//		}
+	//	}
+	//}
+	//map.LoadMap(mapArray);
